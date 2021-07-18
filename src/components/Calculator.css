@@ -1,0 +1,74 @@
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background:linear-gradient(#65bbec,#7a9ad7);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+/* ------------------  card styles  ------------------- */
+
+
+.container {
+  border-radius: 15px;
+  background-color: #f2f2f2;
+  margin: 20px;
+  padding: 20px;
+}
+
+.Display {
+    display: flex;
+    justify-content: flex-end;
+    /* align-items: center; */
+    background: #f2f2f2;
+    height: 20%;
+    color: #65bbec;
+    font-size: 40px;
+    padding: 5px;
+}
+
+.buttonwhite {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 25px;
+  color: #65bbec;
+  border: 1px solid rgba(0,0,0,0.05);
+  box-shadow: 2px 2px 2px #d6d6d6;
+  padding: 4px;
+  margin: 8px;
+}
+
+.buttonblue {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 25px;
+  color: #ffffff;
+  border: 1px solid rgba(0,0,0,0.05);
+  background: #65bbec;
+  box-shadow: 5px 5px 5px #7a9ad7;
+  padding: 4px;
+  margin: 8px;
+}
+
+.buttonbluelong {
+  width: 120px;
+  height: 50px;
+  border-radius: 40px;
+  font-size: 25px;
+  color: #ffffff;
+  border: 1px solid rgba(0,0,0,0.05);
+  background: #65bbec;
+  box-shadow: 5px 5px 5px #7a9ad7;
+  padding: 4px;
+  margin: 8px;
+}
