@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import CalculatorKey from "./CalculatorKey";
+import CalculatorButtons from "./CalculatorValues";
 import "./Calculator.css";
 
 function Calculator() {
@@ -46,13 +46,12 @@ function Calculator() {
     setNextValue(parseFloat(nextValue) * -1);
   };
   const clearData = () => {
-    setNextValue(null);
-    setPrevValue(0);
+    setPrevValue(null);
+    setNextValue("0");
     setOp(null);
   };
 
   const handleOperation = (value) => {
-    console.log(typeof value);
     if (Number.isInteger(value)) {
       handleNum(parseInt(value, 10));
     } else if (value in CalculatorOperations) {
@@ -86,109 +85,109 @@ function Calculator() {
                 <p>{prevValue}{op}{nextValue}</p>
               </div>
               <div>
-                    <CalculatorKey className="buttonwhite"
+                    <CalculatorButtons className="buttonwhite"
                             onClick={clearData}
                             label="c" 
                             keyValue={"c"}>
-                    </CalculatorKey>
-                    <CalculatorKey className="buttonwhite"
+                    </CalculatorButtons>
+                    <CalculatorButtons className="buttonwhite"
                             onClick={handleOperation} 
                             label="7" 
                             keyValue={"\xB1"}>
-                    </CalculatorKey>
-                    <CalculatorKey className="buttonwhite"
+                    </CalculatorButtons>
+                    <CalculatorButtons className="buttonwhite"
                             onClick={handleOperation} 
                             label="%" 
                             keyValue={"%"}>
-                    </CalculatorKey>
-                    <CalculatorKey className="buttonblue"
+                    </CalculatorButtons>
+                    <CalculatorButtons className="buttonblue"
                             onClick={handleOperation} 
                             label="/" 
                             keyValue={"\xf7"}>
-                    </CalculatorKey>
+                    </CalculatorButtons>
               </div>
               <div>
-                    <CalculatorKey className="buttonwhite"
+                    <CalculatorButtons className="buttonwhite"
                             onClick={handleOperation}  
                             label="7" 
                             keyValue={7}>
-                    </CalculatorKey>
-                    <CalculatorKey className="buttonwhite"
+                    </CalculatorButtons>
+                    <CalculatorButtons className="buttonwhite"
                             onClick={handleOperation} 
                             label="8" 
                             keyValue={8}>
-                    </CalculatorKey>
-                    <CalculatorKey className="buttonwhite" 
+                    </CalculatorButtons>
+                    <CalculatorButtons className="buttonwhite" 
                             onClick={handleOperation}
                             label="9" 
                             keyValue={9}>
-                    </CalculatorKey>
-                    <CalculatorKey className="buttonblue" 
+                    </CalculatorButtons>
+                    <CalculatorButtons className="buttonblue" 
                             onClick={handleOperation}
                             label="x" 
                             keyValue={"\xd7"}>
-                    </CalculatorKey>
+                    </CalculatorButtons>
               </div>
               <div>
-                    <CalculatorKey className="buttonwhite" 
+                    <CalculatorButtons className="buttonwhite" 
                             onClick={handleOperation}
                             label="4" 
                             keyValue={4}>
-                    </CalculatorKey>
-                    <CalculatorKey className="buttonwhite" 
+                    </CalculatorButtons>
+                    <CalculatorButtons className="buttonwhite" 
                             onClick={handleOperation}
                             label="5" 
                             keyValue={5}>
-                    </CalculatorKey>
-                    <CalculatorKey className="buttonwhite" 
+                    </CalculatorButtons>
+                    <CalculatorButtons className="buttonwhite" 
                             onClick={handleOperation}
                             label="6" 
                             keyValue={6}>
-                    </CalculatorKey>
-                    <CalculatorKey className="buttonblue" 
+                    </CalculatorButtons>
+                    <CalculatorButtons className="buttonblue" 
                             onClick={handleOperation}
                             label="-" 
                             keyValue={"-"}>
-                    </CalculatorKey>
+                    </CalculatorButtons>
               </div>
               <div>
-                    <CalculatorKey className="buttonwhite" 
+                    <CalculatorButtons className="buttonwhite" 
                             onClick={handleOperation}
                             label="1" 
                             keyValue={1}>
-                    </CalculatorKey>
-                    <CalculatorKey className="buttonwhite" 
+                    </CalculatorButtons>
+                    <CalculatorButtons className="buttonwhite" 
                             onClick={handleOperation}
                             label="2" 
                             keyValue={2}>
-                    </CalculatorKey>
-                    <CalculatorKey className="buttonwhite" 
+                    </CalculatorButtons>
+                    <CalculatorButtons className="buttonwhite" 
                             onClick={handleOperation}
                             label="3" 
                             keyValue={3}>
-                    </CalculatorKey>
-                    <CalculatorKey className="buttonblue" 
+                    </CalculatorButtons>
+                    <CalculatorButtons className="buttonblue" 
                             onClick={handleOperation}
                             label="+" 
                             keyValue={"+"}>
-                    </CalculatorKey>
+                    </CalculatorButtons>
               </div>
               <div>
-                    <CalculatorKey className="buttonwhite" 
+                    <CalculatorButtons className="buttonwhite" 
                             onClick={handleOperation}
                             label="0" 
                             keyValue={0}>
-                    </CalculatorKey>
-                    <CalculatorKey className="buttonwhite" 
+                    </CalculatorButtons>
+                    <CalculatorButtons className="buttonwhite" 
                             onClick={handleOperation}
                             label="." 
                             keyValue={"."}>
-                    </CalculatorKey>
-                    <CalculatorKey className="buttonbluelong" 
+                    </CalculatorButtons>
+                    <CalculatorButtons className="buttonbluelong" 
                             onClick={handleOperation}
                             label="=" 
                             keyValue={"="}>
-                    </CalculatorKey>
+                    </CalculatorButtons>
               </div>
           </div>
       </header>

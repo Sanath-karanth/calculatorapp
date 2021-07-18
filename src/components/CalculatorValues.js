@@ -1,7 +1,6 @@
 import React from "react";
 
-import "./CalculatorKey.css";
-function CalculatorKey(props) {
+function Calculatorbuttons(props) {
   return (
     <button
       className={`${props.className}`}
@@ -12,4 +11,4 @@ function CalculatorKey(props) {
   );
 }
 
-export default CalculatorKey;
+export default Calculatorbuttons;
